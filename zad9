@@ -1,0 +1,19 @@
+//зад9 По дадено число N изкарайте на екрана квадрат от N x N символи,
+    // където по главния диагонал стоят нули, над него +, а под него -.
+    
+      int N;
+      std::cout << "Enter the N : ";
+      std::cin >> N;
+      for (int i = 1; i <= N; i++) {
+          for (int j = 1; j <= N; j++) {
+              if (i == j) {
+                  std::cout << " 0 ";
+              }
+              else if (i < j) {
+                  std::cout << " + ";
+              }
+              else std::cout << " - ";
+          }
+          std::cout << std::endl;
+      }
+      
