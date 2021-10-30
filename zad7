@@ -1,0 +1,21 @@
+  // зад 7 По дадено естествено число определете дали то е просто.
+    
+    int number;
+    std::cout << "Enter the number : ";
+    std::cin >> number;
+       if (number == 2) {
+        std::cout << "Prime number!";
+       }
+       else if (number == 1 || number % 2 == 0) {
+        std::cout << "It's not a prime number!";
+       }
+       else {
+        bool flag = true;
+        for (int i = 3; i <= number / 2 && flag; i += 2) {
+            if (number % i == 0) flag = false;
+        }
+            if (flag) {
+                std::cout << "Prime number!";
+            }
+            else std::cout << "It's not a prime number!";
+            }
